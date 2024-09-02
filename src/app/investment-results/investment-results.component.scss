@@ -1,0 +1,15 @@
+.resultats{
+  display: flex;
+  justify-content: center;
+
+  table{
+    th{
+      color: #5692de;
+      font-size: 1.1rem;
+    }
+    th, td{
+      text-align: end;
+      padding: 0 1rem;
+    }
+  }
+}
