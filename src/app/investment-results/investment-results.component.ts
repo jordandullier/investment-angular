@@ -16,7 +16,5 @@ import {inject} from "@angular/core";
 export class InvestmentResultsComponent {
   private investmentService = inject(InvestmentService)
 
-  get results(){
-    return this.investmentService.resultsData
-  }
+  results = this.investmentService.resultsData.asReadonly()
 }
