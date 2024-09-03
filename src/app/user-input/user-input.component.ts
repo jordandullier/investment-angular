@@ -1,6 +1,4 @@
 import {Component, output, signal} from '@angular/core';
-import {FormsModule} from "@angular/forms";
-import {InvestmentInput} from "../investment-input.model";
 import {InvestmentService} from "../investment.service";
 
 const DEFAULT_INITIAL_INVESTMENT = '10000'
@@ -10,8 +8,6 @@ const DEFAULT_DURATION = '5'
 
 @Component({
   selector: 'app-user-input',
-  standalone: true,
-  imports: [FormsModule],
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.scss'
 })
